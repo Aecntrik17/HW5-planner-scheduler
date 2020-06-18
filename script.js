@@ -33,3 +33,11 @@ $("tr").each(function () {
   //   using .val so that it reads the value and not the object/element
   agendaDisplay.val(agenda);
 });
+
+// activating the save button with event listener click
+$(".saveBtn").on("click", function (event) {
+  event.preventDefault();
+  // accessing data user input into the id agenda display and saving it to local storage
+  let agenda = $("#agendaDisplay").val();
+  localStorage.setItem("agenda" + $(this).parent().parent().attr("id"), agenda);
+});
