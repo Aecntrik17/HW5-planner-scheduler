@@ -28,5 +28,22 @@
     <!-- color code rows according to past, present and futre of actual time -->
     <!-- create save button, specific for each row of data -->
     <!-- ensure that user input data is stored to location only when save button is clicked, even after page is reloaded -->
+
+    <!-- header display -->
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+      <!-- div that holds data from moment.js -->
+      <div id="dateTime"></div>
+      <!-- clear button clears data inputs from the page display but not from local storage -->
+      <div><button id="clear">Clear Planner</button></div>
+      <!-- reset button clears data inputs from local storage and from the page display -->
+      <div><button id="reset">Reset Planner</button></div>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
