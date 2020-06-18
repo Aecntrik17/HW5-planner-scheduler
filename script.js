@@ -50,3 +50,12 @@ $("#clear").on("click", function (event) {
     data.val("");
   });
 });
+// // activating listener on reset button
+$("#reset").on("click", function (event) {
+  // each element with "tr" is targeted and removed local storage as well as clears from the display on page.
+  $("tr").each(function () {
+    let data = $(this).children(".middle").children("textarea");
+    data.val("");
+    localStorage.setItem("agenda" + $(this).attr("id"), "");
+  });
+});
