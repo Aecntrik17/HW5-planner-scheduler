@@ -39,5 +39,14 @@ $(".saveBtn").on("click", function (event) {
   event.preventDefault();
   // accessing data user input into the id agenda display and saving it to local storage
   let agenda = $("#agendaDisplay").val();
+  //   directing the location for this based on the placement of the button in the famliy where the id is selected
   localStorage.setItem("agenda" + $(this).parent().parent().attr("id"), agenda);
+});
+// activating listener on clear button
+$("#clear").on("click", function (event) {
+  // each element with "tr" take the data set the value to empty - which will clear the "agenda display"
+  $("tr").each(function () {
+    let data = $(this).children(".middle").children("textarea");
+    data.val("");
+  });
 });
