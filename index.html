@@ -42,6 +42,29 @@
       <div><button id="reset">Reset Planner</button></div>
     </header>
 
+    <!-- container for entire page -->
+    <div id="timeSlot" class="container">
+        <!-- table for timeblocks -->
+        <table id="timeTable" class="table table-bordered">
+          <tbody>
+              <!-- row with id specific to the time slot -->
+            <tr id="8">
+                <!-- cell one; time slot -->
+              <td id="time" scope="row">8:00</td>
+              <!-- cell two; agenda user input -->
+              <td class="middle">
+                <textarea
+                  id="agendaDisplay"
+                  class="form-control"
+                  class="agenda"
+                  rows="1"
+                ></textarea>
+                <!-- cell three; save button -->
+              </td>
+              <td><button class="saveBtn">Save</button></td>
+            </tr>
+            <!-- copy format for each time slot in the work day -->
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./script.js"></script>
