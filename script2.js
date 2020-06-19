@@ -34,9 +34,11 @@ $(".saveBtn").on("click", function (event) {
   // alert("I'm working");
   event.preventDefault();
   // accessing data user input into the id agenda display and saving it to local storage
-  let agenda = $("#agendaDisplay").val();
+
+  let agenda = $("#agendaDisplay" + $(this).parent().parent().attr("id")).val();
 
   //   directing the location for this based on the placement of the button in the famliy where the id is selected
+
   localStorage.setItem("agenda" + $(this).parent().parent().attr("id"), agenda);
 });
 // activating listener on clear button
