@@ -25,8 +25,6 @@ $("tr").each(function () {
   }
   var agenda = localStorage.getItem("agenda" + hour);
 
-  // }
-
   // this is taking the saved user agenda from the local storage and writing it to the page in the placeholder input
   let agendaDisplay = $(this).children(".middle").children("textarea");
   agendaDisplay.val(agenda);
