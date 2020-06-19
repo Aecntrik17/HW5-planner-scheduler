@@ -12,4 +12,7 @@ I added a clear button, which allows the user to remove displayed data from the 
 
 I also added a reset button, which allows the user to empty the local storage and clear the display as well.
 
-image: data input but not saved ![image](https://user-images.githubusercontent.com/64560630/85141787-52b6f200-b215-11ea-9ec8-62f22201ceb2.png)
+image: ![image](https://user-images.githubusercontent.com/64560630/85177914-23bb7300-b24b-11ea-9938-c3e1e0d7b315.png)
+
+no licence required.
+copyright Aaron D. Sims
